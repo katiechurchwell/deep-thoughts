@@ -3,6 +3,7 @@
   [![project-top-language](https://img.shields.io/github/languages/top/katiechurchwell/deep-thoughts?color=blueviolet)](https://github.com/katiechurchwell/deep-thoughts)
 ## Summary
 ![GraphQL](https://img.shields.io/badge/-GraphQL-E10098?style=flat&logo=graphql&logoColor=white)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=flat&logo=react-router&logoColor=white)
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=flat&logo=react&logoColor=%2361DAFB)
 
 Social media application where users can create an account, post their thoughts for others to see, and interact with other users through these thoughts.
