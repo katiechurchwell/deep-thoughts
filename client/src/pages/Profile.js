@@ -1,19 +1,19 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
-import { QUERY_USER } from '../utils/queries';
+import { QUERY_USER, QUERY_ME } from '../utils/queries';
 import ThoughtList from '../components/ThoughtList';
 import FriendList from '../components/FriendList';
 
 const Profile = () => {
   const { username: userParam } = useParams();
-
-  const { loading, data } = useQuery(QUERY_USER, {
+  console.log(userParam)
+  const { loading, data } = useQuery(userParam ? QUERY_USER : QUERY_ME, {
     variables: { username: userParam }
   });
 
-  const user = data?.user || {};
-  console.log(user)
+  const user = data?.me || data?.user || {};
+  console.log("user", user);
 
   if (loading) {
     return <div>Loading...</div>;
@@ -29,7 +29,7 @@ const Profile = () => {
 
       <div className="flex-row justify-space-between mb-3">
         <div className="col-12 mb-3 col-lg-8">
-          <ThoughtList thoughts={user.thoughts} title={`${user.username}'s thoughts...`} />
+          {/* <ThoughtList thoughts={user.thoughts} title={`${user.username}'s thoughts...`} /> */}
         </div>
         <div className="col-12 col-lg-3 mb-3">
           <FriendList
