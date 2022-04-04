@@ -1,11 +1,16 @@
 import React from 'react';
+
+// components
 import ThoughtList from '../components/ThoughtList';
 import ThoughtForm from '../components/ThoughtForm';
 import FriendList from '../components/FriendList';
 
+// utils
 import Auth from '../utils/auth';
-import { useQuery } from '@apollo/client';
 import { QUERY_THOUGHTS, QUERY_ME_BASIC } from '../utils/queries';
+
+// apollo
+import { useQuery } from '@apollo/client';
 
 const Home = () => {
   const { loading, data } = useQuery(QUERY_THOUGHTS);
