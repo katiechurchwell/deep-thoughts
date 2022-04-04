@@ -1,18 +1,16 @@
 import React from 'react';
-import { useQuery } from '@apollo/client';
-
-import { QUERY_THOUGHTS, QUERY_ME_BASIC } from '../utils/queries';
-import Auth from '../utils/auth';
-
 import ThoughtList from '../components/ThoughtList';
 import FriendList from '../components/FriendList';
 
-const Home = () => {
+import Auth from '../utils/auth';
+import { useQuery } from '@apollo/client';
+import { QUERY_THOUGHTS, QUERY_ME_BASIC } from '../utils/queries';
 
+const Home = () => {
   const { loading, data } = useQuery(QUERY_THOUGHTS);
   const { data: userData } = useQuery(QUERY_ME_BASIC);
-
   const thoughts = data?.thoughts || [];
+
   const loggedIn = Auth.loggedIn();
 
   return (
@@ -22,7 +20,10 @@ const Home = () => {
           {loading ? (
             <div>Loading...</div>
           ) : (
-            <ThoughtList thoughts={thoughts} title="Some Feed for Thought(s)..." />
+            <ThoughtList
+              thoughts={thoughts}
+              title="Some Feed for Thought(s)..."
+            />
           )}
         </div>
         {loggedIn && userData ? (
