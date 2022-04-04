@@ -12,9 +12,9 @@
 Social media application where users can create an account, post their thoughts for others to see, and interact with other users through these thoughts.
 
 ## Deployment
+https://vast-brook-58844.herokuapp.com/
 
-
-## Demo/Screenshot
+## Screenshot
 ![Screenshot of Deep Thoughts](./screenshot.png)
 
 ## Questions
