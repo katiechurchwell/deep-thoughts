@@ -4,7 +4,6 @@
 
 
 ## Summary
-![GraphQL](https://img.shields.io/badge/-GraphQL-E10098?style=flat&logo=graphql&logoColor=white)
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=flat&logo=react&logoColor=%2361DAFB)
 ![Apollo-GraphQL](https://img.shields.io/badge/-ApolloGraphQL-311C87?style=flat&logo=apollo-graphql)
 ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=flat&logo=mongodb&logoColor=white)
@@ -16,7 +15,7 @@ Social media application where users can create an account, post their thoughts 
 
 
 ## Demo/Screenshot
-![Screenshot of Deep Thoughts](./screen-shot.png)
+![Screenshot of Deep Thoughts](./screenshot.png)
 
 ## Questions
   If you have any questions about this project, please open an issue or use the contact information below:
