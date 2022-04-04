@@ -1,5 +1,5 @@
 {
-  "name": "deep-thoughts",
+  "name": "mern-social-media",
   "version": "1.0.0",
   "description": "",
   "main": "server/server.js",
@@ -10,13 +10,10 @@
     "seed": "cd server && npm run seed",
     "build": "cd client && npm run build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/katiechurchwell/deep-thoughts.git"
-  },
   "keywords": [],
   "author": "",
-  "dependencies": {
-    "concurrently": "^7.1.0"
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^5.1.0"
   }
 }
