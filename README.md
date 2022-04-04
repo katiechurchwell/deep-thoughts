@@ -16,7 +16,7 @@ Social media application where users can create an account, post their thoughts 
 
 
 ## Demo/Screenshot
-
+![Screenshot of Deep Thoughts](./screen-shot.png)
 
 ## Questions
   If you have any questions about this project, please open an issue or use the contact information below:
